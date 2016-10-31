@@ -1,3 +1,6 @@
+/*Base rules*/
+
+
 html,
 body {
   margin: 0;
@@ -5,11 +8,18 @@ body {
 }
 
 body {
+  color: #000;
+
   font-family: "PT Sans Narrow", Arial, serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 24px;
-  color: #000;
+}
+
+fieldset {
+  margin: 0;
+
+  border: 0;
 }
 
 h1 {
@@ -24,25 +34,32 @@ legend {
 }
 
 .clearfix::after {
-  content: '';
   display: table;
   clear: both;
+
+  content: '';
 }
 
 .container {
   width: 940px;
-  padding: 0 10px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
+
+/*Header*/
+
+
 .main-header {
+  margin-bottom: 55px;
+
+  text-transform: uppercase;
 
   color: #fff;
+  background: #000;
+
   font-size: 16px;
   line-height: 20px;
-  background: #000;
-  text-transform: uppercase;
-  margin-bottom: 55px;
 }
 
 .index-header {
@@ -50,32 +67,45 @@ legend {
 }
 
 .navigation {
-  width: 780px;
   float: left;
+
+  width: 780px;
 }
 
 .navigation ul {
-  list-style: none;
   margin-top: 27px;
   margin-bottom: 27px;
+
+  list-style: none;
 }
 
 .navigation ul li {
   display: inline-block;
+
+  vertical-align: middle;
 }
 
 .user-block {
-  width: 140px;
   float: right;
+
+  width: 140px;
 }
+
+
+/*Index logo*/
+
 
 .index-logo {
   width: 368px;
   height: 204px;
   margin-right: auto;
-  margin-left: auto;
   margin-bottom: 25px;
+  margin-left: auto;
 }
+
+
+/*Index features*/
+
 
 .features {
   margin-bottom: 80px;
@@ -83,14 +113,20 @@ legend {
 
 .features-item {
   float: left;
+
   width: 300px;
   margin-right: 20px;
+
   text-align: center;
 }
 
 .features-item:last-child {
   margin-right: 0;
 }
+
+
+/*Index content*/
+
 
 .index-content {
   margin-bottom: 35px;
@@ -99,40 +135,53 @@ legend {
 
 .index-content-left {
   float: left;
+
   width: 380px;
 }
 
 .index-content-right {
   float: right;
+
   width: 300px;
 }
+
+
+/*Footer*/
+
 
 .footer {
   margin-top: 65px;
   padding-top: 60px;
   padding-bottom: 40px;
+
   text-transform: uppercase;
-  background: #000;
+
   color: #fff;
+  background: #000;
 }
 
 .footer-contacts {
   float: left;
+
   width: 320px;
   margin-right: 60px;
 }
 
 .footer-social {
   float: left;
+
   width: 180px;
 }
 
 .footer-copyright {
   float: right;
+
   width: 180px;
 }
 
-/*Catalog*/
+
+/*Non-main page header*/
+
 
 .page-header {
   text-transform: uppercase;
@@ -140,11 +189,19 @@ legend {
 
 .breadcrumbs li {
   display: inline-block;
+
+  vertical-align: middle;
 }
+
+
+/*Catalog form*/
+
 
 .selection-form {
   float: left;
+
   width: 220px;
+
   text-transform: uppercase;
 }
 
@@ -152,24 +209,28 @@ legend {
   list-style: none;
 }
 
-fieldset {
-  border: 0;
-  margin: 0;
-}
-
 .cards-block {
   float: right;
+
   width: 700px;
 }
+
+
+/*Catalog cards block*/
+
 
 .cards {
   font-size: 0;
 }
 
 .card {
-  width: 220px;
   display: inline-block;
+
+  width: 220px;
   margin-right: 20px;
+
+  vertical-align: middle;
+
   font-size: 14px;
   line-height: 18px;
 }
@@ -178,36 +239,50 @@ fieldset {
   margin-right: 0;
 }
 
+
+/*Pagination*/
+
+
 .pagination {
   list-style: none;
 }
 
 .pagination li {
   display: inline-block;
+
+  vertical-align: middle;
 }
 
-/*Item page*/
+
+/*Item page image block*/
+
 
 .image-block {
   float: left;
+
   width: 460px;
 }
 
 .image-big {
-
   margin-bottom: 20px;
 }
 
 .image-small {
   float: left;
+
   margin-right: 20px;
 }
 
-.thumbnails a:last-child img {
+.thumbnails a:last-child {
   margin-right: 0;
 }
 
+
+/*Item page article*/
+
+
 .article-description {
   float: right;
+
   width: 390px;
 }
